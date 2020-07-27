@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Connection Family</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/EstiloConnectionFamily.css}" />
+	</head>
+	<body>
+		<header>
+			<div class="EstTo">
+				<img th:src="@{/images/icologo.png}" class="logo" />
+			</div>
+		</header>
+		<!-- Começo - fim -->
+		<div class="EstBody">
+		<form method="post" th:action="@{/mensagens/criar}" th:object="${mensagens}">
+			<div class="PostConteudo">
+				<div class="CriandoPost">
+					<select class="SelectCriandoMensagem" th:field="*{usuario.id}">
+						<option th:each="user : ${usuarios}"h th:value="${user.id}" th:text="${user.nome} + ' (' + ${user.FormattedId} + ')' ">TechMason</option>
+					</select>
+					<br />
+					<textarea class="CriandoMensagem" placeholder="Deixe sua mensagem!" th:field="*{texto}"></textarea>
+				</div>
+			</div>
+			<!-- Final do Post -->
+			<input type="reset" value="Cancelar" class="buttonCancelar" th:onclick="'window.location.href=\'' + @{/mensagens/listar} + '\';'" /> 
+			<input type="submit" value="Criar" class="buttonCriar" />
+		</form>
+		</div>
+		<!-- Rodapé -->	
+	</body>
+</html>

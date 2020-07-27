@@ -1,0 +1,175 @@
+/* Projeto ConnectionFamaly
+	
+	Author: Paulo Daniel
+	author: paulodanielaraujo.pd90@gmail.com
+	versão: 1.0
+	
+*/
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+@charset "ISO-8859-1";
+.EstTo
+{
+	background-color:#a56fde;
+}
+body
+{
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+.logo
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 50px;
+}
+.EstBody
+{
+	border: 10px inset #a56fde;
+}
+.PostConteudo
+{
+	height: auto;
+	min-height: 3vw;
+	margin-top: 20px;
+	border-bottom: 1px solid #1c1c1c; 
+}
+.CriandoPost
+{
+	width: 100%;
+	font-size: 3vw;
+}
+
+.CriandoMensagem
+{
+	margin-bottom: 20px;
+	width: 90%;
+	height: 10vw;
+	min-height: 100px;
+	border: 5px solid #a56fde;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 3vw;
+}
+
+.SelectCriandoMensagem
+{
+	margin-bottom: 20px;
+	width: 50%;
+	height: 5vw;
+	min-height: 100px;
+	border: 5px solid #a56fde;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 3vw;
+}
+
+.PostagemImagemUser
+{
+	margin-left: 5%;
+	width: 8%;
+	
+	float: left;
+	overflow: hidden;
+}
+
+.PostagemMensagens
+{
+	text-align	: left;
+	width: 85%;
+	font-size: 3vw;
+	
+	overflow: hidden;
+}
+
+.SpanAuthor
+{
+	font-weight: bold;
+	
+}
+
+.SpanInfo
+{
+	color: #a0a0a0;
+}
+
+.TextoPostagem
+{
+	margin-top: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: sans-serif;
+}
+
+.spanBrilhar
+{
+	color: 59cdff;
+}
+
+.userImagem
+{
+	width: 100%;
+}
+
+.iconeGostar
+{
+	margin-top: 10px;
+	width: 8%:
+}
+
+.buttonCancelar
+{
+	border-radius: solid #848484;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-ms-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	
+	margin: 20px 0px 20px 0px;
+	font-size: 3vw;
+	background-color: #8285f2;
+	color: #ffffff;
+	font-family: sans-serif;
+	
+	border: solid #848484;
+	font-weight: bold;
+	text-transform: uppercase;	
+	padding: 5px 8px;;
+}
+input[type="reset"]:hover
+{
+	background: #59cdff;
+}
+
+
+.buttonCriar
+{
+	border-radius: solid #848484;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-ms-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+		
+	margin: 20px 0px 20px 0px;
+	font-size: 3vw;
+	background-color: #59cdff;
+	color: #ffffff;
+	font-family: sans-serif;
+	
+	border: solid #848484;
+	font-weight: bold;
+	text-transform: uppercase;	
+	padding: 5px 8px;
+}
+
+input[type="submit"]:hover
+{
+	background: #8285f2;
+}
+

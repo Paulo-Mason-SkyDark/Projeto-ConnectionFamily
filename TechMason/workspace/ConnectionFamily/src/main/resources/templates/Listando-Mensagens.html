@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmls="http://www.w3.org/1999/xhtml" xmls:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/EstiloConnectionFamily.css}">
+		<title>Connection Family</title>
+	</head>
+	<body>
+		<header>
+			<div class="EstTo">
+				<img th:src="@{/images/icologo.png}" class="logo" />
+			</div>
+		</header>
+		<!-- Começo e fim -->
+		<div class="EstBody">
+			<div class="PostConteudo" th:each="mensagens : ${mensagens}">
+				<div class="PostagemImagemUser">
+					<img th:src="@{/images/user/user_} + ${mensagens.usuario.id} + '.jpg'" class="userImagem" />
+				</div>
+				<div class="PostagemMensagens">
+					<p class="TextoPostagem">
+						<span class="SpanAuthor"  th:text="${mensagens.usuario.nome}"></span>
+						<span class="SpanInfo" th:text="${mensagens.usuario.FormattedId} + ' - ' + ${mensagens.calcularTempo()} + 'min'"></span>
+						<br />
+							<span th:text="${mensagens.texto}"></span>
+						<br />
+						<a th:href="@{/mensagens/brilhar} + '?msgId=' + ${mensagens.id}"><img th:src="@{/images/icoBrilhar/icoBrilhante.png}" class="iconeGostar"></a>
+						<span class="spanBrilhar" th:text="${mensagens.brilhar}"></span>
+					</p>
+				</div>
+			</div>
+			<!-- Fim de postagem-->
+			<input type="submit" value="Criar" class="buttonCriar" th:onclick="'window.location.href=\'' + @{/mensagens/nova} + '\';'" />
+			</div>
+	</body>
+</html>
